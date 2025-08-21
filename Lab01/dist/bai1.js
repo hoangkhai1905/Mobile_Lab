@@ -2,14 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Person = void 0;
 //1. Create a class Person with attributes name and age. Write a method to display this information.
-var Person = /** @class */ (function () {
-    function Person(name, age) {
+class Person {
+    constructor(name, age) {
         this.name = name;
         this.age = age;
     }
-    Person.prototype.printInfo = function () {
+    printInfo() {
         console.log('Bai1: ' + this.name, this.age);
-    };
-    return Person;
-}());
+    }
+}
 exports.Person = Person;

@@ -2,16 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Box = void 0;
 //16. Create a generic class Box that can store any type of value.
-var Box = /** @class */ (function () {
-    function Box(value) {
+class Box {
+    constructor(value) {
         this.value = value;
     }
-    Box.prototype.getValue = function () {
+    getValue() {
         return this.value;
-    };
-    Box.prototype.setValue = function (value) {
+    }
+    setValue(value) {
         this.value = value;
-    };
-    return Box;
-}());
+    }
+}
 exports.Box = Box;

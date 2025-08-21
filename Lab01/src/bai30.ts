@@ -6,6 +6,8 @@ export class School {
     private students: Student[] = [];
     private teachers: Teacher[] = [];
 
+    constructor() {}
+
     addStudent(student: Student): void {
         this.students.push(student);
     }

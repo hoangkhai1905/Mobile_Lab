@@ -3,11 +3,10 @@
 //price > 100.
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Product = void 0;
-var Product = /** @class */ (function () {
-    function Product(name, price) {
+class Product {
+    constructor(name, price) {
         this.name = name;
         this.price = price;
     }
-    return Product;
-}());
+}
 exports.Product = Product;

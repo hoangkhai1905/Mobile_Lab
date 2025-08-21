@@ -2,22 +2,21 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Stack = void 0;
 //22. Create a class Stack with push, pop, peek, isEmpty methods.
-var Stack = /** @class */ (function () {
-    function Stack() {
+class Stack {
+    constructor() {
         this.items = [];
     }
-    Stack.prototype.push = function (item) {
+    push(item) {
         this.items.push(item);
-    };
-    Stack.prototype.pop = function () {
+    }
+    pop() {
         return this.items.pop();
-    };
-    Stack.prototype.peek = function () {
+    }
+    peek() {
         return this.items[this.items.length - 1];
-    };
-    Stack.prototype.isEmpty = function () {
+    }
+    isEmpty() {
         return this.items.length === 0;
-    };
-    return Stack;
-}());
+    }
+}
 exports.Stack = Stack;

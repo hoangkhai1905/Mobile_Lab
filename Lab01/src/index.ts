@@ -21,6 +21,8 @@ import { Animal3, Dog2 } from "./bai19";
 import { Bike, Car1 } from "./bai20";
 import { Repository } from "./bai21";
 import { Stack } from "./bai22";
+import { CardPayment, CashPayment } from "./bai23";
+import { Fan, AirConditioner } from "./bai24";
 import { Shape2 } from "./bai25";
 import { Order } from "./bai26";
 import { Animal1, Dog1, Cat1 } from "./bai28";
@@ -91,13 +93,13 @@ bai15.listBooks();
 bai15.listUsers();
 
 const bai16 = new Box('Hello World');
-console.log('Bai 16: Box Value: ' + bai16.getValue());
+console.log('\nBai 16: Box Value: ' + bai16.getValue());
 
 const bai17 = new Logger();
 bai17.log('This is a log message');
 
 
-console.log('Bai 18: Sum of 5 and 10: ' + MathUtil.add(5, 10));
+console.log('\nBai 18: Sum of 5 and 10: ' + MathUtil.add(5, 10));
 
 const bai20Car = new Car1();
 const bai20Bike = new Bike();
@@ -112,7 +114,7 @@ const bai22 = new Stack();
 bai22.push(1);
 bai22.push(2);
 bai22.pop();
-console.log('Bai 22: Stack Top: ' + bai22.peek());
+console.log('\nBai 22: Stack Top: ' + bai22.peek());
 
 
 const bai23 = new CardPayment();
@@ -127,7 +129,7 @@ bai24_1.turnOn();
 
 Shape2.describe();
 
-console.log('Bai 26:');
+console.log('\nBai 26:');
 const bai26 = new Order();
 bai26.addProduct(new Product("Product 1", 50));
 bai26.addProduct(new Product("Product 2", 150));
@@ -142,13 +144,13 @@ dog.makeSound();
 cat.makeSound();
 
 
-console.log('Bai 29:');
+console.log('\nBai 29:');
 const car = new Car2();
 car.move();
 const robot = new Robot();
 robot.move();
 
-console.log('Bai 30');
+console.log('\nBai 30');
 const school = new School();
 school.addStudent(new Student('Alice', 18, 9.0));
 school.addTeacher(new Teacher('Mr. Smith', 40,'Math'));

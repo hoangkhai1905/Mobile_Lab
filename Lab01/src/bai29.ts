@@ -2,12 +2,17 @@
 export interface Movable {
     move(): void;
 }
-export class Car implements Movable {
+export class Car2 implements Movable {
+
+    constructor() {}
+
     move(): void {
         console.log("Car is moving");
     }
 }
 export class Robot implements Movable {
+
+    constructor() {}
     move(): void {
         console.log("Robot is moving");
     }
